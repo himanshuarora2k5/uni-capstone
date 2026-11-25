@@ -1,0 +1,2 @@
+[Thu Jun 09 06:07:04 2005] [notice] LDAP: Built with OpenLDAP LDAP SDK
+[Thu Jun 09 06:07:04 2005] [error] env.createBean2(): Factory error creating channel.jni:jni ( channel.jni:jni)

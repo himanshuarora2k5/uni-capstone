@@ -1,0 +1,15 @@
+{
+  "name": "cloudtrail",
+  "description": "AWS CloudTrail record (one JSON object). The cloud action is api.service.name + ':' + api.operation, e.g. s3:GetObject. NOTE: CloudTrail event names do not always equal IAM action names; the full system uses IAM Access Analyzer for that step.",
+  "order": 20,
+  "type": "json",
+  "require": ["eventSource", "eventName"],
+  "mapping": {
+    "metadata.original_time": "{eventTime}",
+    "api.service.name": {"value": "{eventSource}", "strip_suffix": ".amazonaws.com"},
+    "api.operation": "{eventName}",
+    "actor.user.uid": "{userIdentity.arn}",
+    "cloud.region": "{awsRegion}",
+    "message": "{eventSource} {eventName}"
+  }
+}

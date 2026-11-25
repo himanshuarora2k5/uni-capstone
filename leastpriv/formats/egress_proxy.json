@@ -1,0 +1,14 @@
+{
+  "name": "egress_proxy",
+  "description": "One outbound destination per line: '<ISO time> <application> CONNECT <host>:<port> <decision>'. Written by the recorder (v0.1: in-process stand-in; later: the egress proxy).",
+  "order": 10,
+  "type": "regex",
+  "pattern": "^(?P<time>\\d{4}-\\d{2}-\\d{2}T\\S+)\\s+(?P<app>\\S+)\\s+(?P<method>CONNECT)\\s+(?P<host>[^\\s:]+):(?P<port>\\d+|-)\\s+(?P<decision>\\w+)$",
+  "mapping": {
+    "metadata.original_time": "{time}",
+    "actor.process.name": "{app}",
+    "dst_endpoint.hostname": "{host}",
+    "dst_endpoint.port": {"value": "{port}", "type": "int"},
+    "message": "{method} {host}:{port} {decision}"
+  }
+}

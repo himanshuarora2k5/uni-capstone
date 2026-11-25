@@ -1,0 +1,4 @@
+Jun 14 15:16:01 combo sshd(pam_unix)[19939]: authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=203.0.113.7
+Jun 14 15:16:02 combo sshd(pam_unix)[19939]: check pass; user unknown
+Jun  9 06:07:04 combo syslogd 1.4.1: restart.
+this line matches no registered format

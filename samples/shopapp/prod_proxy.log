@@ -1,0 +1,4 @@
+2026-01-02T09:00:01.100Z shopapp-mini CONNECT images.shopapp.example:443 recorded
+2026-01-02T09:00:02.200Z shopapp-mini CONNECT payments.shopapp.example:443 recorded
+2026-01-02T09:00:03.300Z shopapp-mini CONNECT analytics.shopapp.example:443 recorded
+2026-01-02T09:00:04.400Z shopapp-mini CONNECT notifications.shopapp.example:443 recorded

@@ -1,0 +1,4 @@
+{"Records": [
+  {"eventTime": "2026-01-01T00:00:01Z", "eventSource": "s3.amazonaws.com", "eventName": "GetObject",
+   "awsRegion": "ap-south-1", "userIdentity": {"arn": "arn:aws:sts::000000000000:assumed-role/shopapp-sandbox/session"}}
+]}

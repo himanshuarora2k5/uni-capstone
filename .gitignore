@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.idea/
+.vscode/
+.DS_Store
+
+# files the demo and local runs create
+demo_output/
+demo_check/
+demo_ci/
+leastpriv-demo-*/
+*.chain.jsonl
+*.anchor

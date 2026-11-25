@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leastpriv"
+dynamic = ["version"]
+description = "Least-privilege contracts from sandboxed runs, with a tamper-evident OCSF-mapped log (working name)."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["PyYAML>=6.0"]
+
+[project.scripts]
+leastpriv = "leastpriv.cli:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "leastpriv.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["leastpriv*"]
+
+[tool.setuptools.package-data]
+leastpriv = ["formats/*.json"]

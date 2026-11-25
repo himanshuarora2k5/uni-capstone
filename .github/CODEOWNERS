@@ -1,0 +1,10 @@
+# Optional. Uncomment and replace with the team's real GitHub usernames (a wrong username makes GitHub report an error).
+# Each person is then asked to review changes in their lane.
+#
+# /leastpriv/engine/      @USERNAME-pranav
+# /leastpriv/formats/     @USERNAME-pranav
+# /leastpriv/integrity/   @USERNAME-sanyam
+# /leastpriv/recorder/    @USERNAME-rhythm
+# /leastpriv/contract/    @USERNAME-gurpreet
+# /leastpriv/watcher/     @USERNAME-vansham
+# /docs/ /.github/ /leastpriv/cli.py /leastpriv/pipeline.py   @USERNAME-himanshu

@@ -1,0 +1,12 @@
+{
+  "name": "apache_error",
+  "description": "Apache error log: '[time] [level] message'",
+  "order": 60,
+  "type": "regex",
+  "pattern": "^\\[(?P<time>[^\\]]+)\\]\\s+\\[(?P<level>[^\\]]+)\\]\\s+(?P<message>.*)$",
+  "mapping": {
+    "metadata.original_time": "{time}",
+    "severity": "{level}",
+    "message": "{message}"
+  }
+}
